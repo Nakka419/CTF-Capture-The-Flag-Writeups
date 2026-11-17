@@ -4,7 +4,7 @@ This secret box is designed to conceal your secrets. It's perfectly secure—onl
 
 
 
-
+<br><br>
 
 # **Walkthrough**
 1. Account Creation & Initial Enumeration
@@ -19,7 +19,7 @@ Submitting a single quote triggers an HTTP 500 Internal Server Error. Because th
  ![Secret Vault](new%20secret.png) ![Secret Vault](single%20quote.png)
 
 
-
+<br><br>
 
 ### 2. Fingerprinting the Database Management System (DBMS)
 Because the injected input is stored inside the secrets table and reflected back on the user's dashboard, we can use string concatenation payloads from the PortSwigger SQL Injection Cheat Sheet to identify the backend DBMS: https://portswigger.net/web-security/sql-injection/cheat-sheet
@@ -36,7 +36,7 @@ Confirm PostgreSQL: Query the database version using PostgreSQL's version() func
  ![Secret Vault](dbms%20version.png)
 The application executes the subquery and displays the PostgreSQL version banner in the saved secret, confirming a PostgreSQL backend.
 
-
+<br><br>
 
 
 ### 3. Database & Table Enumeration
@@ -49,7 +49,7 @@ Payload: '||(SELECT table_name FROM information_schema.tables WHERE table_schema
 ![Secret Vault](secrets.png)
 
 
-
+<br><br>
 
 ### 4. Column Enumeration & Flag Extraction
 Next, enumerate the columns inside the secrets table by querying information_schema.columns (WHERE table_name='secrets') using LIMIT 1 and OFFSET to inspect each column name individually, revealing the content column.
