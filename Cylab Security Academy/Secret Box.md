@@ -29,9 +29,13 @@ Because the injected input is stored inside the secrets table and reflected back
 ![Secret Vault](test.png) ![Secret Vault](test2.png)
 
 
+<br><br>
 
 
-Confirm PostgreSQL: Query the database version using PostgreSQL's version() function inside the pipe subquery: **'||(SELECT version())||'**
+Confirm PostgreSQL: Query the database version using PostgreSQL's version() function inside the pipe subquery.
+Payload: **'||(SELECT version())||'**
+ 
+ ![Secret Vault](version.png)
    
  ![Secret Vault](dbms%20version.png)
 The application executes the subquery and displays the PostgreSQL version banner in the saved secret, confirming a PostgreSQL backend.
