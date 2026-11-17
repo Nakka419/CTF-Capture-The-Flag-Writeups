@@ -2,3 +2,5 @@ This secret box is designed to conceal your secrets. It's perfectly secure—onl
 
 ![Secret Vault](secret%20vault%20hp.png)
 
+**STEP 1**
+- Sign Up: user: test; password:test
