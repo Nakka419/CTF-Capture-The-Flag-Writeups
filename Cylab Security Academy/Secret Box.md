@@ -22,7 +22,7 @@ Submitting a single quote triggers an HTTP 500 Internal Server Error. Because th
 <br><br>
 
 ### 2. Fingerprinting the Database Management System (DBMS)
-Because the injected input is stored inside the secrets table and reflected back on the user's dashboard, we can use string concatenation payloads from the PortSwigger SQL Injection Cheat Sheet to identify the backend DBMS: https://portswigger.net/web-security/sql-injection/cheat-sheet
+Since the injected input is stored in the database and reflected back on the user's dashboard, we can use string concatenation payloads from the PortSwigger SQL Injection Cheat Sheet to identify the backend DBMS: https://portswigger.net/web-security/sql-injection/cheat-sheet
  
  Test String Concatenation: Submit the payload **te'||'st** into the secret field. The application saves and renders the concatenated string as test, confirming that || is evaluated as a string concatenation operator. This narrows the backend database down to Oracle or PostgreSQL.
    
