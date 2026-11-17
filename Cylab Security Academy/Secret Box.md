@@ -3,9 +3,13 @@ This secret box is designed to conceal your secrets. It's perfectly secure—onl
 ![Secret Vault](secret%20vault%20hp.png)
 
 
-**Walkthrough**
+
+
+
+# **Walkthrough**
 1. Account Creation & Initial Enumeration
 Register a new user account on the application using the credentials test / test (username: test, password: test).
+
 ![Secret Vault](sign%20up.png)
 
 
