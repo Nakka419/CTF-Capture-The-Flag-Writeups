@@ -9,5 +9,4 @@ This secret box is designed to conceal your secrets. It's perfectly secure—onl
 
 
 -  Login with the credentials you just created and on the home page select create new secrets. in the text box enter a single quote. notice in burpsuite the single quote returned a 500 internal server error. which is an indication of a sql injection.
--  ![Secret Vault](new%20secret.png)
--  ![Secret Vault](single%20quote.png)
+ ![Secret Vault](new%20secret.png) ![Secret Vault](single%20quote.png)
