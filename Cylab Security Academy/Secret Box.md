@@ -4,4 +4,4 @@ This secret box is designed to conceal your secrets. It's perfectly secure—onl
 
 **STEP 1**
 - Sign Up: user: test; password:test
-![Secret Vault](sign%up.png)
+![Secret Vault](sign%20up.png)
