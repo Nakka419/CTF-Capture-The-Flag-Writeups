@@ -26,7 +26,7 @@ Because the injected input is stored inside the secrets table and reflected back
  
  Test String Concatenation: Submit the payload **te'||'st** into the secret field. The application saves and renders the concatenated string as test, confirming that || is evaluated as a string concatenation operator. This narrows the backend database down to Oracle or PostgreSQL.
    
-![Secret Vault](new%20secret.png)
+![Secret Vault](test.png) ![Secret Vault](test2.png)
 
 
 
