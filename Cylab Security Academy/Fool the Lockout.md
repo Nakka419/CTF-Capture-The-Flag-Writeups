@@ -42,8 +42,8 @@ Intercepted the login request using Burp Suite Proxy and sent the POST /login re
 Selected Pitchfork to test corresponding username and password combinations simultaneously.
 
 Configured two payload positions:
-Position 1: Username list
-Position 2: Password list
+Payload Set 1 (Usernames): Configure as a Simple list containing the 100 usernames (rora, birendra, khalid, stanislaw, maged, sigrid, alysse, emely, etc.).   
+Payload Set 2 (Passwords): Configure as a Simple list containing the 100 matching passwords. 
 
 Both payload lists contained 100 entries, maintaining their original order.
 ![Lockout](pf.png)
@@ -112,13 +112,15 @@ Screenshot: Authenticated homepage displaying the flag
 
 Flag:
 
-academy{f00l_7h4t_l1m1t3r_01f813c6}
+### academy{f00l_7h4t_l1m1t3r_01f813c6}
 
 
 
 
 
-Key Takeaways
+<br><br>
+
+## Key Takeaways
 
 Source code review can reveal weaknesses in security controls.
 
