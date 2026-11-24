@@ -5,7 +5,7 @@ The challenge involved a Flask login application protected by IP-based rate limi
 Tools Used:
 Burp Suite (Proxy & Intruder)
 Source Code Analysis
-
+![Lockout](login.png)
 <br><br>
 
 # 1. Source Code Analysis
@@ -28,7 +28,7 @@ The application resets its request counter after the 30-second window expires. T
 # 2. Capturing the Login Request
 
 Intercepted the login request using Burp Suite Proxy and sent the POST /login request to Intruder.
-Screenshot: Login request intercepted in Burp Suite
+![Lockout](sti.png)
 
 
 
@@ -46,7 +46,7 @@ Position 1: Username list
 Position 2: Password list
 
 Both payload lists contained 100 entries, maintaining their original order.
-Screenshot: Pitchfork attack and payload configuration
+![Lockout](pf.png)
 
 
 
@@ -64,7 +64,7 @@ Fixed delay: 3200 milliseconds
 Automatic throttling: Disabled
 
 This kept requests below the application's threshold while allowing the attack to progress.
-Screenshot: Custom Resource Pool configuration
+![Lockout](resource.png)
 
 
 
@@ -94,7 +94,7 @@ Redirect
 
 The redirect and session cookie indicated successful authentication.
 
-Screenshot: Successful authentication in Intruder
+![Lockout](resource.png)
 
 
 
