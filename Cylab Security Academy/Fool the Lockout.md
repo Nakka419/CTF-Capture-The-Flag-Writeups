@@ -6,7 +6,9 @@ Tools Used:
 Burp Suite (Proxy & Intruder)
 Source Code Analysis
 
-1. Source Code Analysis
+<br><br>
+
+# 1. Source Code Analysis
 Reviewed app.py to understand the rate-limiting implementation.
 
 Key configurations:
@@ -21,7 +23,9 @@ The application resets its request counter after the 30-second window expires. T
 
 
 
-2. Capturing the Login Request
+<br><br>
+
+# 2. Capturing the Login Request
 
 Intercepted the login request using Burp Suite Proxy and sent the POST /login request to Intruder.
 Screenshot: Login request intercepted in Burp Suite
@@ -31,7 +35,9 @@ Screenshot: Login request intercepted in Burp Suite
 
 
 
-3. Configuring Burp Suite Intruder
+<br><br>
+
+# 3. Configuring Burp Suite Intruder
 
 Selected Pitchfork to test corresponding username and password combinations simultaneously.
 
@@ -46,7 +52,9 @@ Screenshot: Pitchfork attack and payload configuration
 
 
 
-4. Bypassing the Rate Limit
+<br><br>
+
+# 4. Bypassing the Rate Limit
 
 Created a custom Burp Suite Resource Pool to control request timing.
 
@@ -61,7 +69,9 @@ Screenshot: Custom Resource Pool configuration
 
 
 
-5. Identifying Valid Credentials
+<br><br>
+
+# 5. Identifying Valid Credentials
 
 After launching the attack, Request 60 returned a different response from the failed login attempts.
 
@@ -90,7 +100,9 @@ Screenshot: Successful authentication in Intruder
 
 
 
-6. Flag Retrieval
+<br><br>
+
+# 6. Flag Retrieval
 
 Authenticated using the discovered credentials and accessed the homepage.
 
