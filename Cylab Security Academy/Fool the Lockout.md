@@ -94,7 +94,7 @@ Redirect
 
 The redirect and session cookie indicated successful authentication.
 
-![Lockout](resource.png)
+![Lockout](flagg.png)
 
 
 
