@@ -94,7 +94,7 @@ Redirect
 
 The redirect and session cookie indicated successful authentication.
 
-![Lockout](flagg.png)
+![Lockout](success.png)
 
 
 
@@ -106,8 +106,7 @@ The redirect and session cookie indicated successful authentication.
 
 Authenticated using the discovered credentials and accessed the homepage.
 
-Screenshot: Authenticated homepage displaying the flag
-
+![Lockout](flagg.png)
 
 
 Flag:
